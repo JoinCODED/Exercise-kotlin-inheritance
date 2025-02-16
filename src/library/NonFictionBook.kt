@@ -1,15 +1,16 @@
 package library
 
-class FictionBook(
+class NonFictionBook(
     title: String,
     author: String,
     ISBN: String,
     var imagePath: String,
-    var genre: String = "fantasy",
+    var subject: String = "History",
+    var genre: String = "Non-fiction",
 ): Book(title, author, ISBN) {
 
-     override fun getInfo(): String{
-        return "$genre - $title by $author (ISBN: $ISBN)"
+    override fun getInfo(): String{
+        return "$genre - A $subject book titled: $title by $author (ISBN: $ISBN)"
     }
 
     fun getImageURL(): String {
