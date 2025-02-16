@@ -10,7 +10,7 @@ class NonFictionBook(
 ): Book(title, author, ISBN) {
 
     override fun getInfo(): String{
-        return "$genre - A $subject book titled: $title by $author (ISBN: $ISBN)"
+        return "$genre - A $subject book titled: ${super.getInfo()}"
     }
 
     fun pullCitation(): String {
