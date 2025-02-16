@@ -13,6 +13,10 @@ class NonFictionBook(
         return "$genre - A $subject book titled: $title by $author (ISBN: $ISBN)"
     }
 
+    fun pullCitation(): String {
+        return "$ISBN ISBN, $title, $author"
+    }
+
     fun getImageURL(): String {
         return "https://yousite.com/$imagePath";
     }

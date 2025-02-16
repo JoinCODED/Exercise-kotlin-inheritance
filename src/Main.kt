@@ -22,4 +22,5 @@ fun main() {
         subject="Programming"
     );
     nonFictionBook.displayInfo()
+    println(nonFictionBook.pullCitation());
 }
