@@ -9,7 +9,7 @@ class FictionBook(
 ): Book(title, author, ISBN) {
 
      override fun getInfo(): String{
-        return "$genre - $title by $author (ISBN: $ISBN)"
+        return "$genre - ${super.getInfo()}"
     }
 
     fun getImageURL(): String {
