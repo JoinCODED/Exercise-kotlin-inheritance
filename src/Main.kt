@@ -1,3 +1,5 @@
+import library.*
+
 fun main() {
-    println("Hello World!")
+
 }
