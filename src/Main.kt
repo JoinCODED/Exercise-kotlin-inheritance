@@ -1,3 +1,6 @@
+import library.Book
+
 fun main() {
-    println("Hello World!")
+    var newBook = Book("test", "yousef", "1234")
+    newBook.displayInfo()
 }
