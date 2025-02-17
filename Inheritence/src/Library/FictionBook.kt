@@ -1,8 +1,8 @@
 package Library
 
 class FictionBook(
-    title: String, author: String, ISBN: String, val genre: String) : Book(title, author, ISBN) {
-
+    title: String, author: String, ISBN: String, val genre: String, publishYear: Int
+) : Book(title, author, ISBN, publishYear) {
 
     override fun displayInfo() {
         super.displayInfo()
@@ -10,8 +10,6 @@ class FictionBook(
     }
 }
 fun main() {
-    val fictionBook = FictionBook("Tomorrow and Tomorrow and Tomorrow", "Gabrielle Zevin", "9780593321201 ", "Fiction")
-
+    val fictionBook = FictionBook("Tomorrow and Tomorrow and Tomorrow", "Gabrielle Zevin", "9780593321201", "Fiction", 2022)
     fictionBook.displayInfo()
-}
-
+    fictionBook.read() }
