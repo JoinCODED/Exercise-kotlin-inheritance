@@ -7,6 +7,6 @@ open class Book(val title: String, val author: String, val ISBN: String) {
 }
 
 fun main() {
-    val book = Book("Tomorrow and Tomorrow and Tomorrow", "Gabrielle Zevin", "1234567890")
+    val book = Book("Tomorrow and Tomorrow and Tomorrow", "Gabrielle Zevin", "9780593321201")
     book.displayInfo()
 }
